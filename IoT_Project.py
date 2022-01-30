@@ -44,15 +44,15 @@ client.on_message = recv_message
 
 temp = 30
 humi = 50
-light_intesity = 100
+light_intensity = 100
 counter = 0
 longitude = 106.660172
 latitude = 10.762622
 while True:
-    collect_data = {'temperature': temp, 'humidity': humi, 'light': light_intesity,
+    collect_data = {'temperature': temp, 'humidity': humi, 'light': light_intensity,
                     'longitude': longitude, 'latitude': latitude}
     temp += 1
     humi += 1
-    light_intesity += 1
+    light_intensity += 1
     client.publish('v1/devices/me/telemetry', json.dumps(collect_data), 1)
     time.sleep(10)
