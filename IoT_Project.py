@@ -46,8 +46,11 @@ temp = 30
 humi = 50
 light_intesity = 100
 counter = 0
+longitude = 106.660172
+latitude = 10.762622
 while True:
-    collect_data = {'temperature': temp, 'humidity': humi, 'light':light_intesity}
+    collect_data = {'temperature': temp, 'humidity': humi, 'light': light_intesity,
+                    'longitude': longitude, 'latitude': latitude}
     temp += 1
     humi += 1
     light_intesity += 1
